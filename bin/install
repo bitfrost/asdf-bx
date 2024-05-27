@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 
 set -e
@@ -20,10 +19,8 @@ install_bx() {
 
   mkdir -p "${install_path}"
   mkdir -p "${bin_install_path}"
-
   local bin_path="${bin_install_path}/bx"
   echo "downloading bx ${download_url}"
-  echo "${install_path}"
     curl -L -s "$download_url" | funzip > "${install_path}"/bx
   mv "${install_path}/bx" "${bin_install_path}/bx"
   chmod +x $bin_path

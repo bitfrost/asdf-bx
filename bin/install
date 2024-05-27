@@ -42,7 +42,7 @@ get_download_url() {
   local version="$1"
   local platform="$(get_platform)"
   local arch="$(get_arch)"
-  echo "https://github.com/bitfrost/bx/releases/download/${version}/bx_${platform}_${arch}.zip"
+  echo "https://github.com/bitfrost/bx/releases/download/v${version}/bx-${platform}-${arch}.zip"
 }
 
 install_bx $ASDF_INSTALL_TYPE $ASDF_INSTALL_VERSION $ASDF_INSTALL_PATH
